@@ -1,0 +1,59 @@
+LONG HAIR IDENTIFICATION - ORGANIZED PROJECT
+=============================================
+
+This folder now includes the original ML application, both uploaded trained
+weight files, and a separate built-in photo/rule demonstration.
+
+A) RUN THE ACTUAL ML APPLICATION
+--------------------------------
+The two trained model weight files are included in this same folder:
+  - age_gender_weights.weights.h5
+  - hair_length_weights.weights.h5
+
+Use Python 3.11 or 3.12. In PowerShell, from this project folder:
+
+  python -m venv .venv
+  .\.venv\Scripts\Activate.ps1
+  python -m pip install --upgrade pip
+  python -m pip install -r requirements.txt
+  python gui_app.py
+
+If you already have an active virtual environment, activate it instead of
+creating another one. The runtime model architecture restores all saved
+MobileNetV2 backbone weights from hair_length_weights.weights.h5, so it does
+not need to download ImageNet weights when opening the GUI.
+
+In the GUI, choose a photo with a clearly visible face and click Predict.
+The pipeline detects the face, estimates age and real gender, estimates hair
+length, then applies the task rule: ages 20-30 inclusive use hair length
+(Long -> Female, Short -> Male); outside that range the real-gender model
+result is retained. Predictions depend on the quality and training of the
+provided models; check them against labelled test examples before claiming
+an accuracy figure.
+
+B) RUN THE BUILT-IN PHOTO DEMO (NO MODEL OR DATASET REQUIRED)
+-------------------------------------------------------------
+  python -m pip install -r requirements-demo.txt
+  python long_hair_photo_demo.py
+
+This separate GUI has embedded illustrative portraits and preset inputs.
+It demonstrates the interface and decision rule only; it does not perform
+actual image recognition.
+
+C) IMPORTANT FILES KEPT
+-----------------------
+- gui_app.py                          Original ML GUI
+- core.py                             Original ML inference pipeline
+- model_defs.py                       Model architecture definitions
+- kaggle_train_all.py                 Original Kaggle training script
+- age_gender_weights.weights.h5      Uploaded trained age/gender weights
+- hair_length_weights.weights.h5     Uploaded trained hair-length weights
+- requirements.txt                    ML application dependencies
+- README.md                            Original project documentation
+- long_hair_photo_demo.py             Built-in photo/rule demo
+- requirements-demo.txt              Demo dependencies
+
+No original source file was removed. The uploaded trained weights are now
+placed next to core.py and gui_app.py as required. The Kaggle training script
+and original README are retained. Dataset files and your existing .venv are
+not included in this portable ZIP.

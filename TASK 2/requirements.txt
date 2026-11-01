@@ -1,0 +1,9 @@
+tensorflow>=2.15,<2.20
+opencv-python>=4.8
+numpy
+pandas
+openpyxl
+scikit-learn
+matplotlib
+Pillow
+pyarrow

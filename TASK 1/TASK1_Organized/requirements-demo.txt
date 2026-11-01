@@ -1,0 +1,2 @@
+# Only needed for long_hair_photo_demo.py
+Pillow

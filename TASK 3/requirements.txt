@@ -1,0 +1,9 @@
+numpy
+scipy
+scikit-learn>=1.3
+joblib
+matplotlib
+# optional: microphone recording and audio playback
+sounddevice
+# optional: mp3 / m4a support (also needs ffmpeg installed)
+# pydub
