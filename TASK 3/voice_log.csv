@@ -1,0 +1,14 @@
+Time,Source,Gender,Gender_Confidence,Age,Category,Emotion,Message
+2026-10-31 23:13:43,"Sample: Female, 66 yrs, Sad",Female,0.95,,REJECTED,,Upload male voice.
+2026-10-31 23:14:04,female_66_sad.wav,Female,0.95,,REJECTED,,Upload male voice.
+2026-10-31 23:14:19,male_74_angry.wav,Male,1.00,71,Senior Citizen,Angry,"Senior Citizen - estimated age 71, emotion: Angry"
+2026-10-31 23:24:20,male_35_neutral.wav,Male,0.96,38,Below 60,,Estimated age 38 (below 60) - emotion not required
+2026-10-31 23:24:25,"Sample: Male, 35 yrs, Neutral",Male,0.96,38,Below 60,,Estimated age 38 (below 60) - emotion not required
+2026-10-31 23:25:06,male_24_happy.wav,Male,0.86,33,Below 60,,Estimated age 33 (below 60) - emotion not required
+2026-10-31 23:25:07,"Sample: Male, 24 yrs, Happy",Male,0.86,33,Below 60,,Estimated age 33 (below 60) - emotion not required
+2026-10-31 23:25:31,male_81_happy.wav,Male,0.86,77,Senior Citizen,Happy,"Senior Citizen - estimated age 77, emotion: Happy"
+2026-10-31 23:25:51,female_30_neutral.wav,Female,0.89,,REJECTED,,Upload male voice.
+2026-11-02 11:09:16,female_30_neutral.wav,Female,0.89,,REJECTED,,Upload male voice.
+2026-11-02 11:09:24,male_24_happy.wav,Male,0.86,33,Below 60,,Estimated age 33 (below 60) - emotion not required
+2026-11-02 11:09:46,male_68_sad.wav,Male,0.96,53,Below 60,,Estimated age 53 (below 60) - emotion not required
+2026-11-02 11:09:59,male_74_angry.wav,Male,1.00,71,Senior Citizen,Angry,"Senior Citizen - estimated age 71, emotion: Angry"

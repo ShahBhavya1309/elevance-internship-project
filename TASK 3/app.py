@@ -158,7 +158,7 @@ class App:
     def _train_thread(self):
         try:
             import train
-            train.train_all(n=4000, progress=lambda m: self.q.put(("progress", m)))
+            train.train_all(n=2000, progress=lambda m: self.q.put(("progress", m)))
             self.q.put(("trained", None))
         except Exception as e:
             self.q.put(("error", f"Training failed: {e}"))

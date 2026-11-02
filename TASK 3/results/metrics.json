@@ -1,0 +1,60 @@
+{
+  "samples_total": 4000,
+  "samples_test": 800,
+  "gender_accuracy": 0.98375,
+  "gender_confusion_matrix": [
+    [
+      471,
+      6
+    ],
+    [
+      7,
+      316
+    ]
+  ],
+  "age_mae_male": 8.356098284620225,
+  "age_within_5_years": 0.36058700209643607,
+  "senior_precision": 0.8238993710691824,
+  "senior_recall": 0.7572254335260116,
+  "senior_f1": 0.7891566265060241,
+  "emotion_accuracy_all_males": 0.7316561844863732,
+  "emotion_accuracy_seniors": 0.7109826589595376,
+  "emotion_confusion_matrix": [
+    [
+      81,
+      3,
+      8,
+      0,
+      1
+    ],
+    [
+      15,
+      55,
+      0,
+      19,
+      12
+    ],
+    [
+      7,
+      0,
+      87,
+      0,
+      0
+    ],
+    [
+      5,
+      33,
+      0,
+      56,
+      3
+    ],
+    [
+      1,
+      18,
+      0,
+      3,
+      70
+    ]
+  ],
+  "data_source": "built-in synthetic voices"
+}
